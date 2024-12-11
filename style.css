@@ -45,10 +45,10 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #474278;
+    color: #6e405f;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: bolder;
     position: relative;
 }
 nav ul li a::after{
