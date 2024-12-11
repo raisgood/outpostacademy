@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Muran Code, LLC.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11db549ea0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Muran Realty.JPG" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#Businesses">Heru Productions</a>
+                        <a href="#Businesses">Movie Insurrectionist</a>
+                        <a href="#Businesses">Muran Realty</a>
+                    </li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Muran Code, LLC.</p>
+                <h1>Entertainment<br>Movie Reviews<br>Real Estate</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------Businesses----------------------------------- -->
+   <div id="Businesses">
+    <div class="container">
+        <h1 class="sub-title">Businesses</h1>
+    </div>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/heru logo.jpg">
+            <div class="layer">
+                <h3>Heru Productions</h3>
+                <p>Film, Television and Movie company.  It's an F.B.A. Thang!!!!</p>
+                <a href="heruproductions.com" target="_blank">Click!</a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/Screenshot_12-2-2024_215516_www.bing.com.jpeg">
+            <div class="layer">
+                <h3>The Movie Insurrectionist</h3>
+                <p>Film, Television, Games and Social Media Reviews.  Content Review from a F.B.A. Point of View!!!!</p>
+                <a href="https://movie-insurrectionist.com" target="_blank">Click!</a>
+            </div>
+    </div>
+    <div class="work-3">
+        <img src="images/Muran Realty.JPG">
+        <div class="layer">
+            <h3>Muran Realty</h3>
+            <p>Short-term Rentals.  We help with Stay-cations or Vacations.</p>
+            <a href="muranrealty.com" target="_blank">Click!</a>
+        </div>
+   </div>
+   </div>
+
+<!-- ----------------------Contact---------------------------- -->
+
+   <div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+    </div>
+            <div class="contact-list">
+                <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane"><a href="mailto:murancode@gmail.com" target="_blank">murancode@gmail.com</a></i></p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/rashadhumphrey" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/movieinsurrectionist" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://linkedin.com/heruproductions" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/movieinsurrectionist" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Muran Code, LLC.</p>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxUA4eF9l9f2Hc8ZRIH9wi7PBjpldfcTG7esPtME8PHRMQu5ahc6_kqhc-vRxvPSfJqgQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Sent!!!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+   </script>
+
+    </body>
+</html>
