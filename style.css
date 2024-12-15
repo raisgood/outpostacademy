@@ -45,7 +45,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #6e405f;
+    color: #fff;
     text-decoration: none;
     font-size: 24px;
     font-weight: bolder;
@@ -101,6 +101,18 @@ nav ul li a:hover::after{
    }
    .about-col-2{
      flex-basis: 60%;
+   }
+   .about-col-3{
+    flex-basis: 35%;
+    color: #fff;
+   }
+   .about-col-3 img{
+    width: 50%;
+    border-radius: 15px;
+   }
+   .about-col-4{
+    flex-basis: 60%;
+    color: #fff;
    }
    .sub-title{
      font-size: 60px;
