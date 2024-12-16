@@ -377,15 +377,15 @@ nav .fa-solid {
     }
     
     .header-text{
-        color: #ff0101;
+        color: #fff;
         margin-top: 20px;
         font-size: 20px;
         font-weight: bold;
     }
     .header-text p{
-        font-size: 50px;
-        text-decoration: #080808 underline;
-        margin: 1px 15vh 1px 15vh;
+        font-size: 70px;
+        text-decoration: #042502 underline;
+        margin: 7px 15vh 1px 15vh;
     }
     .header-text h1{
         font-size: 35px;
