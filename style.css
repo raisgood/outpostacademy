@@ -401,6 +401,12 @@ nav .fa-solid {
     .header-text h1 span{
         margin-left: 30px;
     }
+
+    /*------------------------------about-------------------------*/
+
+    .about-col-3 img{
+        width: 100%;
+    }
     
     /*----------------------------Services------------------------*/
     
@@ -663,6 +669,9 @@ nav .fa-solid {
     .about-col-3 img {
         width: 75%;
         border-radius: 15px;
+    }
+    .about-col-3 h1 {
+        font-size: 25px;
     }
     
     /*----------------------------Services------------------------*/
@@ -931,6 +940,9 @@ nav .fa-solid {
     .about-col-3 img{
         width: 100%;
         border-radius: 15px;
+    }
+    .about-col-3 h1 {
+        font-size: 20px;
     }
     
     /*----------------------------Services------------------------*/
