@@ -112,7 +112,7 @@
     </div>
             <div class="contact-list">
                 <div class="contact-left">
-                <p><i class="fa-solid fa-paper-plane"><a href="mailto:outpostacademy2023@gmail.com" target="_blank">outpostacademy2023@gmail.com</a></i></p>
+                <p><i class="fa-solid fa-paper-plane"><a href="mailto:outpostacademy2025@gmail.com" target="_blank">outpostacademy2025@gmail.com</a></i></p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=61564660415580&notif_id=1733807017090973&notif_t=page_user_activity&ref=notif" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.youtube.com/@OutpostAcademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
@@ -121,13 +121,14 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="1f9c4619-fa2e-47f5-9675-300327717313">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <span id="msg"></span>
                     <button type="submit" class="btn">Submit</button>
                 </form>
-                <span id="msg"></span>
             </div>
             </div>
     </div>
@@ -149,13 +150,13 @@
 </script>
 
    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxUA4eF9l9f2Hc8ZRIH9wi7PBjpldfcTG7esPtME8PHRMQu5ahc6_kqhc-vRxvPSfJqgQ/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby9anO5MXYk8Kg6y4AvkS6HVwCYokQHSswKxejnIb2MrarhcSMG38xxLoMz18CYO2lO/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    fetch(action, { method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML = "Sent!!!"
         setTimeout(function(){
