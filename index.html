@@ -121,11 +121,12 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-web3forms">
                     <input type="hidden" name="access_key" value="1f9c4619-fa2e-47f5-9675-300327717313">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                     <span id="msg"></span>
                     <button type="submit" class="btn">Submit</button>
                 </form>
@@ -149,14 +150,14 @@
     }
 </script>
 
-   <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby9anO5MXYk8Kg6y4AvkS6HVwCYokQHSswKxejnIb2MrarhcSMG38xxLoMz18CYO2lO/exec'
-  const form = document.forms['submit-to-google-sheet']
+   <!--<script>
+  const scriptURL = 'https://api.web3forms.com/submit'
+  const form = document.forms['submit-to-web3forms']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(action, { method: 'POST', body: new FormData(form)})
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML = "Sent!!!"
         setTimeout(function(){
@@ -166,7 +167,50 @@
     })
       .catch(error => console.error('Error!', error.message))
   })
-   </script>
+   </script>-->
+
+   <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        result.innerHTML = "Please wait..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
 
     </body>
 </html>
