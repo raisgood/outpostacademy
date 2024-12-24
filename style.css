@@ -1360,9 +1360,10 @@ form .btn{
         margin-top: -40px;
         display: block;
     }
+}
 
 
-    @media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
         /*----------------------------header-------------------------*/
 
     #header{
@@ -1634,4 +1635,7 @@ form .btn{
         display: block;
     }
 }
-}
+
+
+
+
