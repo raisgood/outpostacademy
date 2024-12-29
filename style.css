@@ -684,7 +684,7 @@ nav .fa-solid {
    }
    .header-text p{
        font-size: 100px;
-       text-decoration: #020202 underline;
+       text-decoration: #045b39 underline;
        text-decoration-skip-ink: none;
        margin: 1px 20vh 1px 25vh;
    }
@@ -1167,7 +1167,7 @@ nav .fa-solid {
 
     nav .fa-solid {
         display: block;
-        font-size: 25px;
+        font-size: 30px;
         color: #fff;
     }
 
@@ -1239,7 +1239,7 @@ nav .fa-solid {
         font-size: 100px;
         text-decoration: #0b643c underline;
         text-decoration-skip-ink: none;
-        margin: 1px 10vh 1px 10vh;
+        margin: 1px 5vh 1px 7vh;
     }
     .header-text h1{
         font-size: 35px;
@@ -1423,7 +1423,7 @@ nav .fa-solid {
     }
 }
 
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 914px){
     /*----------------------------header-------------------------*/
 
 #header{
@@ -1719,7 +1719,7 @@ form .btn{
    
    nav .fa-solid {
        display: block;
-       font-size: 50px;
+       font-size: 30px;
        color: #fff;
    }
    
@@ -1777,8 +1777,8 @@ form .btn{
    }
    
    .logo{
-       max-height: 150px;
-       border-radius: 500px;
+       max-height: 100px;
+       border-radius: 300px;
    }
    
    .header-text{
@@ -1788,10 +1788,10 @@ form .btn{
        font-weight: bold;
    }
    .header-text p{
-       font-size: 125px;
+       font-size: 80px;
        text-decoration: #046d32 underline;
        text-decoration-skip-ink: none;
-       margin: 1px 10vh 1px 15vh;
+       margin: 1px 5vh 1px 7vh;
    }
    .header-text h1{
        font-size: 35px;
@@ -2556,7 +2556,7 @@ form .btn{
     /*---------------------------header---------------------------*/
 
     #header{
-        width: 102%;
+        width: 100%;
         height: 100vh;
         background-image: url(images/College\ Classroom.png);
         background-size: cover;
@@ -3777,8 +3777,8 @@ nav ul .fa-solid{
     font-weight: bold;
 }
 .header-text p{
-    font-size: 30px;
-    text-decoration: #fff underline;
+    font-size: 75px;
+    text-decoration: #027a50 underline;
     text-decoration-skip-ink: none;
     text-align: center;
 }
@@ -4361,8 +4361,7 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 50px;
-    margin: 1px 2vh 1px 10vh;
+    margin-right: 60px;
 }
 
 /*----------------------------Services------------------------*/
@@ -4610,8 +4609,8 @@ nav ul .fa-solid{
     font-weight: bold;
 }
 .header-text p{
-    font-size: 30px;
-    text-decoration: #fff underline;
+    font-size: 50px;
+    text-decoration: #097233 underline;
     text-decoration-skip-ink: none;
     text-align: center;
 }
@@ -5086,7 +5085,7 @@ form .btn{
     /*----------------------------header-------------------------*/
 
 #header{
-    width: 100%;
+    width: 105%;
     height: 100vh;
     background-image: url(images/College\ Classroom.png);
     background-size: cover;
@@ -5169,7 +5168,7 @@ nav ul .fa-solid{
     font-weight: bold;
 }
 .header-text p{
-    font-size: 30px;
+    font-size: 60px;
     text-decoration: #054e30 underline;
     text-decoration-skip-ink: none;
     text-align: center;
@@ -5366,7 +5365,7 @@ form .btn{
     /*----------------------------header-------------------------*/
 
 #header{
-    width: 110%;
+    width: 120%;
     height: 100vh;
     background-image: url(images/College\ Classroom.png);
     background-size: cover;
