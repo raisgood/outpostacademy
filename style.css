@@ -286,7 +286,7 @@ form .btn{
     margin-top: 20px;
     border-radius: 10px;
     color:#fff;
-    font-size: 25px;
+    font-size: 20px;
 }
 .copyright i{
     color: #ff004f;
@@ -420,20 +420,19 @@ nav .fa-solid {
    }
    .about-col-2{
     flex-basis: auto;
-    font-size: x-large;
+    font-size: 16px;
    }
    .about-col-2 p{
-    font-size: 30px;
+    font-size: 18px;
    }
    .about-col-3 img{
        width: 100%;
    }
    .about-col-4 {
     flex-basis: auto;
-    font-size: x-large;
    }
    .about-col-4 p{
-    font-size: 30px;
+    font-size: 16px;
    }
    
    /*----------------------------Services------------------------*/
@@ -583,7 +582,7 @@ nav .fa-solid {
        margin-top: 20px;
        border-radius: 10px;
        color:#fff;
-       font-size: 25px;
+       font-size: 20px;
    }
    .copyright i{
        color: #ff004f;
@@ -711,14 +710,14 @@ nav .fa-solid {
    }
    .about-col-2{
     flex-basis: auto;
-    font-size: x-large;
+    font-size: 16px;
    }
    .about-col-3 img{
        width: 100%;
    }
    .about-col-4 {
     flex-basis: auto;
-    font-size: x-large;
+    font-size: 16px;
    }
    
    /*----------------------------Services------------------------*/
@@ -868,7 +867,7 @@ nav .fa-solid {
        margin-top: 20px;
        border-radius: 10px;
        color:#fff;
-       font-size: 25px;
+       font-size: 20px;
    }
    .copyright i{
        color: #ff004f;
@@ -987,8 +986,14 @@ nav .fa-solid {
         width: 120%;
         border-radius: 15px;
     }
+    .about-col-2{
+        font-size: 16px;
+    }
     .about-col-3 img{
         width: 100%;
+    }
+    .about-col-4 {
+        font-size: 16px;
     }
     
     /*----------------------------Services------------------------*/
@@ -1256,13 +1261,13 @@ nav .fa-solid {
         border-radius: 15px;
     }
     .about-col-2 p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .about-col-3 img{
         width: 100%;
     }
     .about-col-4 p{
-        font-size: 20px;
+        font-size: 16px;
     }
     
     /*----------------------------Services------------------------*/
@@ -1534,6 +1539,9 @@ nav ul .fa-solid{
     width: 310%;
     border-radius: 15px;
 }
+.about-col-2 {
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 115%;
     border-radius: 15px;
@@ -1541,6 +1549,9 @@ nav ul .fa-solid{
 .about-col-3 h1 {
     font-size: 50px;
     margin: 1px 2vh 1px 10vh;
+}
+.about-col-4 {
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -1819,17 +1830,16 @@ form .btn{
     font-size: x-large;
    }
    .about-col-2 p{
-    font-size: 30px;
+    font-size: 16px;
    }
    .about-col-3 img{
        width: 100%;
    }
    .about-col-4 {
     flex-basis: auto;
-    font-size: x-large;
    }
    .about-col-4 p{
-    font-size: 30px;
+    font-size: 16px;
    }
    
    /*----------------------------Services------------------------*/
@@ -1979,7 +1989,7 @@ form .btn{
        margin-top: 20px;
        border-radius: 10px;
        color:#fff;
-       font-size: 25px;
+       font-size: 20px;
    }
    .copyright i{
        color: #ff004f;
@@ -2107,10 +2117,9 @@ form .btn{
    }
    .about-col-2{
     flex-basis: auto;
-    font-size: x-large;
    }
    .about-col-2 p {
-    font-size: 20px;
+    font-size: 16px;
 }
    .about-col-3 img{
        width: 100%;
@@ -2118,10 +2127,9 @@ form .btn{
    }
    .about-col-4 {
     flex-basis: auto;
-    font-size: x-large;
    }
    .about-col-4 p {
-    font-size: 20px;
+    font-size: 16px;
 }
    
    /*----------------------------Services------------------------*/
@@ -2271,7 +2279,7 @@ form .btn{
        margin-top: 20px;
        border-radius: 10px;
        color:#fff;
-       font-size: 25px;
+       font-size: 20px;
    }
    .copyright i{
        color: #ff004f;
@@ -2390,8 +2398,14 @@ form .btn{
         width: 150%;
         border-radius: 15px;
     }
+    .about-col-2 {
+        font-size: 16px;
+    }
     .about-col-3 img{
         width: 100%;
+    }
+    .about-col-4 {
+        font-size: 16px;
     }
     
     /*----------------------------Services------------------------*/
@@ -2658,8 +2672,14 @@ form .btn{
         width: 150%;
         border-radius: 15px;
     }
+    .about-col-2 {
+        font-size: 16px;
+    }
     .about-col-3 img{
         width: 100%;
+    }
+    .about-col-4 {
+        font-size: 16px;
     }
     
     /*----------------------------Services------------------------*/
@@ -2936,7 +2956,7 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-2 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .about-col-3 img{
     width: 100%;
@@ -2946,7 +2966,7 @@ nav ul .fa-solid{
     font-size: 30px;
 }
 .about-col-4 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -3223,7 +3243,7 @@ nav ul .fa-solid{
     font-size: 25px;
 }
 .about-col-2 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .about-col-3 img{
     width: 75%;
@@ -3237,7 +3257,7 @@ nav ul .fa-solid{
     font-size: 25px;
 }
 .about-col-4 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -3512,10 +3532,10 @@ nav ul .fa-solid{
 }
 .about-col-2{
     flex-basis: auto;
-    font-size: 25px;
+    font-size: 16px;
 }
 .about-col-2 p{
-    font-size: 25px;
+    font-size: 16px;
 }
 .about-col-3 img{
     width: 100%;
@@ -3526,10 +3546,10 @@ nav ul .fa-solid{
 }
 .about-col-4{
     flex-basis: auto;
-    font-size: 25px;
+    font-size: 16px;
 }
 .about-col-4 p{
-    font-size: 25px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -3801,12 +3821,18 @@ nav ul .fa-solid{
     width: 310%;
     border-radius: 15px;
 }
+.about-col-2{
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 20px;
+    font-size: 16px;
+}
+.about-col-4 {
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -4078,12 +4104,18 @@ nav ul .fa-solid{
     width: 310%;
     border-radius: 15px;
 }
+.about-col-2{
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 20px;
+    font-size: 16px;
+}
+.about-col-4 {
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -4356,12 +4388,18 @@ nav ul .fa-solid{
     width: 300%;
     border-radius: 15px;
 }
+.about-col-2 {
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 115%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
     margin-right: 60px;
+}
+.about-col-4 {
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -4629,12 +4667,18 @@ nav ul .fa-solid{
 
 /*----------------------------about---------------------*/
 
+.about-col-2{
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 20px;
+    font-size: 16px;
+}
+.about-col-4 {
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -4910,7 +4954,7 @@ nav ul .fa-solid{
         border-radius: 15px;
 }
 .about-col-2 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .about-col-3 img{
     width: 150%;
@@ -4920,7 +4964,7 @@ nav ul .fa-solid{
     font-size: 20px;
 }
 .about-col-4 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -5195,12 +5239,15 @@ nav ul .fa-solid{
     width: 250%;
     border-radius: 15px;
 }
+.about-col-2{
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 120%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 30px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/
@@ -5468,12 +5515,15 @@ nav ul .fa-solid{
 
 /*----------------------------about---------------------*/
 
+.about-col-2{
+    font-size: 16px;
+}
 .about-col-3 img{
     width: 145%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 30px;
+    font-size: 16px;
 }
 
 /*----------------------------Services------------------------*/

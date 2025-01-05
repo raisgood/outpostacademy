@@ -38,13 +38,10 @@
               <img src="images/F291D647-0790-4FBD-A37B-AF0869698C9E.png">
             </div>
             <div class="about-col-2">
-              <p>As a growing educational institution, Outpost Academy is committed to expanding its offerings to include on-site, online, and hybridized learning models. Our vision encompasses a diverse range of disciplines, including the hard sciences, life sciences, mathematics, and social sciences.
-
-                Our mission is to cultivate intellectual and academic rigor that prepares students not only for college and university but also for becoming informed, morally conscious individuals. We strive to ensure equitable access to higher education and empower students to navigate and succeed in a globalized community. At the same time, we actively resist the commodification of knowledge—a pervasive feature of modern Western education.
-                
-                Outpost Academy aims to equip young learners with the tools they need to excel academically, socially, and ethically. Through our programs, students will develop into well-informed, morally grounded, and globally aware citizens, ready to make meaningful contributions to their communities and the world.
-                
-                
+              <p>As a growing educational institution, Outpost Academy is committed to expanding its offerings to include on-site, online, and hybridized learning models. Our vision encompasses many disciplines, including the hard sciences, life sciences, mathematics, and social sciences. Our mission is to cultivate academic rigor that prepares students for college and university. 
+                We strive to ensure equitable access to higher education and empower students to succeed in a globalized community. 
+                Outpost Academy aims to equip young learners with the tools they need to excel academically, socially, and ethically. 
+                Through our programs, students will develop into well-informed, morally grounded, and globally aware citizens, ready to make meaningful contributions to their communities and the world. 
                 While Outpost Academy is rooted in Islamic principles, we warmly welcome students of all faiths. Our values of scholarship, justice, peace, and decency are universal, and we are dedicated to fostering an inclusive, supportive learning environment for all.</p>    
             </div>
           </div>
@@ -58,13 +55,12 @@
                     <h1>Founder<br></h1>
                 </div>
                 <div class="about-col-4">
-                    <p>Dr. Omar Hassan Dphrepaulezz is a historian, educator, and the founder of Outpost Academy, where he serves as the principal curriculum designer. With a scholarly focus on African American History, U.S. History, and U.S. Foreign Policy, Dr. Dphrepaulezz employs innovative teaching methods to explore the intersections of race, imperialism, and the struggles of marginalized communities in their pursuit of freedom and autonomy.
-            
-                        Dr. Dphrepaulezz earned his Ph.D. in History from the University of Connecticut, where his research addressed critical topics such as the history of Islam within the African American community, race and immigration, race and crime, and the intricate relationship between white supremacy and the expansion of the U.S. Empire. His academic expertise encompasses U.S. History, the History of American Foreign Relations, and African American History, all of which he has extensively taught and researched.
-                        
-                        As a second-generation African American Muslim, Dr. Dphrepaulezz’s personal history is deeply intertwined with the broader narrative of African American Islam in the 20th century. His father was a close associate of Shaykh Ahmed Daoud Faisal, a key figure in the African American Muslim community in New York City. Under the mentorship of Sister Khadija, Shaykh Faisal’s wife, Dr. Dphrepaulezz’s mother embraced and practiced the tenets of Islam, linking the family to the Dar Al Islam movement—a pivotal force in shaping African American Muslim identity during the early 20th century.
-                        
-                        Through Outpost Academy, Dr. Dphrepaulezz is committed to delivering culturally relevant and historically grounded educational experiences. His curriculum integrates rigorous historical scholarship with practical insights, fostering a deeper understanding of African American experiences and the role of U.S. foreign policy in shaping global and domestic dynamics.</p>
+                    <p>Dr. Omar Hassan Dphrepaulezz is a historian, educator, and the founder of Outpost Academy, where he serves as the principal curriculum designer. 
+                    With a scholarly focus on African American History, U.S. History, and U.S. Foreign Policy, Dr. Dphrepaulezz employs innovative teaching methods to explore the intersections of race, imperialism, and the struggles of marginalized communities in their pursuit of freedom and autonomy. 
+                    Dr. Dphrepaulezz earned his Ph.D. in History from the University of Connecticut, where his research addressed African American History and the intricate relationship between white supremacy and the expansion of the U.S. Empire. 
+                    His academic expertise encompasses U.S. History, the History of American Foreign Relations, and African American History, all of which he has extensively taught and researched. 
+                    Through Outpost Academy, Dr. Dphrepaulezz is committed to delivering culturally relevant and historically grounded educational experiences. 
+                    His curriculum integrates rigorous historical scholarship with practical insights, fostering a deeper understanding of African American experiences and the role of U.S. foreign policy in shaping global and domestic dynamics.. </p>
                 </div>
             </div>
         </div>
@@ -121,7 +117,7 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-web3forms" onsubmit="reset()">
+                <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-web3forms">
                     <input type="hidden" name="access_key" value="1f9c4619-fa2e-47f5-9675-300327717313">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
@@ -150,7 +146,7 @@
     }
 </script>
 
-   <!--<script>
+<!--<script>
   const scriptURL = 'https://api.web3forms.com/submit'
   const form = document.forms['submit-to-web3forms']
   const msg = document.getElementById("msg")
@@ -167,11 +163,11 @@
     })
       .catch(error => console.error('Error!', error.message))
   })
-   </script>-->
+</script>-->
 
-   <script>
+<script>
     const form = document.getElementById('form');
-    const result = document.getElementById('result');
+    const result = document.getElementsById('result');
     
     form.addEventListener('submit', function(e) {
         const formData = new FormData(form);
@@ -180,7 +176,7 @@
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
     
-        result.innerHTML = "Please wait..."
+        btn.innerHTML = "Please wait..."
     
         fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
@@ -196,7 +192,7 @@
                     result.innerHTML = json.message;
                 } else {
                     console.log(response);
-                    result.innerHTML = json.message;
+                    btn.innerHTML = json.message;
                 }
             })
             .catch(error => {
