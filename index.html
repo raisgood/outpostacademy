@@ -6,6 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/11db549ea0.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("7cH5X9gHF0sCOjX6r");
+      })();
+</script>
+<script src="script.js"></script>
     </head>
     <body>
     <div id="header">
@@ -117,13 +126,11 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-web3forms">
-                    <input type="hidden" name="access_key" value="1f9c4619-fa2e-47f5-9675-300327717313">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <span id="msg"></span>
+                <form onsubmit="sendMail(); reset(); return false;">
+                    <input type="text" id="subject" name="Subject" placeholder="Subject" required>
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
@@ -133,80 +140,5 @@
         <p>Copyright @ Outpost Academy, LLC.</p>
     </div>
 </div>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-
-<!--<script>
-  const scriptURL = 'https://api.web3forms.com/submit'
-  const form = document.forms['submit-to-web3forms']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Sent!!!"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-    })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>-->
-
-<script>
-    const form = document.getElementById('form');
-    const result = document.getElementsById('result');
-    
-    form.addEventListener('submit', function(e) {
-        const formData = new FormData(form);
-        e.preventDefault();
-    
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-    
-        btn.innerHTML = "Please wait..."
-    
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = json.message;
-                } else {
-                    console.log(response);
-                    btn.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
-    </script>
-
     </body>
 </html>
