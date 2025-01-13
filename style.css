@@ -428,6 +428,10 @@ nav .fa-solid {
    .about-col-3 img{
        width: 100%;
    }
+   .about-col-3 h1{
+    font-size: 50px;
+    margin: 1px 15px 1px 15vh;
+   }
    .about-col-4 {
     flex-basis: auto;
    }
@@ -688,8 +692,8 @@ nav .fa-solid {
        margin: 1px 20vh 1px 25vh;
    }
    .header-text h1{
-       font-size: 35px;
-       margin: 1px 25vh 1px 30vh;
+       font-size: 50px;
+       margin: 1px 15px 1px 10vh;
    }
    .header-text h1 span{
        margin-left: 30px;
@@ -714,6 +718,10 @@ nav .fa-solid {
    }
    .about-col-3 img{
        width: 100%;
+   }
+   .about-col-3 h1 {
+    font-size: 50px;
+    margin: 1px 10px 1px 10vh;
    }
    .about-col-4 {
     flex-basis: auto;
@@ -1266,6 +1274,10 @@ nav .fa-solid {
     .about-col-3 img{
         width: 100%;
     }
+    .about-col-3 h1 {
+        font-size: 50px;
+        margin: 1px 5px 1px 5vh;
+    }
     .about-col-4 p{
         font-size: 16px;
     }
@@ -1548,7 +1560,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 50px;
-    margin: 1px 2vh 1px 10vh;
+    margin: 1px 5px 1px 20px;;
 }
 .about-col-4 {
     font-size: 16px;
@@ -2964,6 +2976,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 30px;
+    margin: 1px 5px 1px 15vh;
 }
 .about-col-4 p{
     font-size: 16px;
@@ -3251,6 +3264,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 30px;
+    margin: 1px 15px 1px 5vh;
 }
 .about-col-4{
     flex-basis: auto;
@@ -3543,6 +3557,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 50px;
+    margin: 1px 5px 1px 10px;
 }
 .about-col-4{
     flex-basis: auto;
@@ -3829,7 +3844,8 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 16px;
+    margin: 1px 5px 1px 5px;
+    font-size: 50px;
 }
 .about-col-4 {
     font-size: 16px;
@@ -4113,6 +4129,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 16px;
+    margin: 1px 5px 1px 20px;
 }
 .about-col-4 {
     font-size: 16px;
@@ -4392,11 +4409,12 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 .about-col-3 img{
-    width: 115%;
+    width: 100%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    margin-right: 60px;
+    margin: 1px 5px 1px 5px;
+    font-size: 50px;
 }
 .about-col-4 {
     font-size: 16px;
@@ -4675,7 +4693,8 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 16px;
+    font-size: 50px;
+    margin: 1px 5px 1px 5px;
 }
 .about-col-4 {
     font-size: 16px;
@@ -4957,7 +4976,8 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 .about-col-3 img{
-    width: 150%;
+    height: 75%;
+    width: 75%;
     border-radius: 15px;
 }
 .about-col-3 h1 {
@@ -5247,7 +5267,8 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-3 h1 {
-    font-size: 16px;
+    font-size: 25px;
+    margin: 1px 5px 1px 5vh;
 }
 
 /*----------------------------Services------------------------*/
