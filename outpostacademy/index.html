@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Outpost Academy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11db549ea0.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/F291D647-0790-4FBD-A37B-AF0869698C9E.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <!--<a href="#services">Services</a>-->
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Outpost Academy</p>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------About----------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <h2 class="sub-title">About Us</h2>
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/F291D647-0790-4FBD-A37B-AF0869698C9E.png">
+            </div>
+            <div class="about-col-2">
+              <p>As a growing educational institution, Outpost Academy is committed to expanding its offerings to include on-site, online, and hybridized learning models. Our vision encompasses many disciplines, including the hard sciences, life sciences, mathematics, and social sciences. Our mission is to cultivate academic rigor that prepares students for college and university. 
+                We strive to ensure equitable access to higher education and empower students to succeed in a globalized community. 
+                Outpost Academy aims to equip young learners with the tools they need to excel academically, socially, and ethically. 
+                Through our programs, students will develop into well-informed, morally grounded, and globally aware citizens, ready to make meaningful contributions to their communities and the world. 
+                While Outpost Academy is rooted in Islamic principles, we warmly welcome students of all faiths. Our values of scholarship, justice, peace, and decency are universal, and we are dedicated to fostering an inclusive, supportive learning environment for all.</p>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-3">
+                    <img src="images/Omar's headshot 3.jpeg">
+                    <h1>Founder<br></h1>
+                </div>
+                <div class="about-col-4">
+                    <p>Dr. Omar Hassan Dphrepaulezz is a historian, educator, and the founder of Outpost Academy, where he serves as the principal curriculum designer. 
+                    With a scholarly focus on African American History, U.S. History, and U.S. Foreign Policy, Dr. Dphrepaulezz employs innovative teaching methods to explore the intersections of race, imperialism, and the struggles of marginalized communities in their pursuit of freedom and autonomy. 
+                    Dr. Dphrepaulezz earned his Ph.D. in History from the University of Connecticut, where his research addressed African American History and the intricate relationship between white supremacy and the expansion of the U.S. Empire. 
+                    His academic expertise encompasses U.S. History, the History of American Foreign Relations, and African American History, all of which he has extensively taught and researched. 
+                    Through Outpost Academy, Dr. Dphrepaulezz is committed to delivering culturally relevant and historically grounded educational experiences. 
+                    His curriculum integrates rigorous historical scholarship with practical insights, fostering a deeper understanding of African American experiences and the role of U.S. foreign policy in shaping global and domestic dynamics.. </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+<!-- ----------------------------------Curr-Courses----------------------------------------------- -->
+<div id="curr-courses">
+    <div class="container">
+        <div class="row">
+            <div class="curr-courses-col-1">
+                <img src="Images/Computer Programmer.jpeg">
+                <div class="curr-courses-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a recent graduate from the University of North Illinois's Web Development Program.  I have a full stack certification that specializes in front-end and back-end web development.  I have worked on various projects as well as my own private projects.</p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>Front-End Developer</span><br>Designing Web Designing/API construction</li>
+                    <li><span>Back-End Developer</span><br>Designing Web Designing/App interfaces</li>
+                    <li><span>App Development</span><br>Building Android/IOS apps</li>
+                </ul>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Team Lead at Heru Productons, LLC.</li>
+                        <li><span>2023 - 2024</span><br>Team Lead at Muran Code, LLC.</li>
+                        <li><span>2022 - 2023</span><br>Build Barkster for University of Northern Illinois</li>
+                        <li><span>2022 - 2021</span><br>Internship at ekart eCommerce</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education"><ul>
+                    <li><span>2020</span><br>Front-End development University of Northern Illinois</li>
+                    <li><span>2020</span><br>Back-End development University of Northern Illinois</li>
+                    <li><span>2020</span><br>App development University of Northern Illinois</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+     
+     
+
+<!-- ----------------------------Futr-Courses--------------------------------------- -->
+<div id="futr-courses">
+    <div class="container">
+        <div class="sub-title">My Services</div>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Developer</h2>
+                <p>I specialize in HTML, CSS and JavaScript.  I'm familiar with ReactJS, Python Django, wire-frame and Angular.  I can also build APIs.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Back-End Developer</h2>
+                <p>I'm familiar with SQL, TypeScript and Node.js.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I'm familiar with native app as well as Python.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------Contact---------------------------- -->
+
+   <div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Us</h1>
+    </div>
+            <div class="contact-list">
+                <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane"><a href="mailto:outpostacademy2025@gmail.com" target="_blank">outpostacademy2025@gmail.com</a></i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61564660415580&notif_id=1733807017090973&notif_t=page_user_activity&ref=notif" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@OutpostAcademy" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/outpost_academy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.x.com/@Outpostacad2023" target="_blank"><i class="fa-brands fa-x"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendMail(); reset(); return false;" autocomplete="off">
+                    <input type="text" id="subject" name="Subject" placeholder="Subject" required>
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Outpost Academy, LLC.</p>
+    </div>
+</div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script type="text/javascript">
+    (function(){
+       emailjs.init({publicKey: "7cH5X9gHF0sCOjX6r"});
+       })();
+ </script>
+
+<script>
+
+    function sendMail() {
+        let parms = {
+                subject: document.getElementById("subject").value,
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            }
+            emailjs.send("service_12l7dgf", "template_6axp6he", parms).then(alert("Email Send!!!!"))
+        }
+</script>
+
+    </body>
+</html>
