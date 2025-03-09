@@ -78,7 +78,7 @@
                 <img src="Images/Computer Programmer.jpeg">
                 <div class="curr-courses-col-2">
                     <h1 class="sub-title">Current Courses</h1>
-                    <p>I'm a recent graduate from the University of North Illinois's Web Development Program.  I have a full stack certification that specializes in front-end and back-end web development.  I have worked on various projects as well as my own private projects.</p>
+                    <p>Courses Offered 2025-2026</p>
                 </div>
                 <div class="tab-titles">
                     <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
@@ -171,6 +171,23 @@
         <p>Copyright @ Outpost Academy, LLC.</p>
     </div>
 </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-tab");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 <script>
 var sidemenu = document.getElementById("sidemenu");
