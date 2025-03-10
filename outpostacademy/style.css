@@ -170,10 +170,17 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    background-color: blue;
+    border-radius: 20px;
+    border: 2px solid firebrick;
+    height: 4ex;
+}
+.tab-links:hover{
+    background-color: bisque;
 }
 .tab-links::after{
     content: '';
@@ -209,11 +216,10 @@ nav ul li a:hover::after{
 }
 
 
-/*------------------Futr-Courses-------------------------*/
+/*------------------Online-Classes-------------------------*/
 
-#futr-courses{
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -223,36 +229,12 @@ nav ul li a:hover::after{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
 }
@@ -286,8 +268,28 @@ nav ul li a:hover::after{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#ff004f;
 }
 
 /*------------------------Contact-----------------------*/
