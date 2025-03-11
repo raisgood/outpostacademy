@@ -553,86 +553,167 @@ nav .fa-solid {
     font-size: 16px;
    }
    
-   /*----------------------------Services------------------------*/
+   /*----------------------------Curr-Services------------------------*/
    
-   /*#services{
-       padding: 50px 0;
-       border-color: #ababab;
-   }
-   .work-list{
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-       grid-gap: 40px;
-       margin-top: 50px;
-   }
-   .work{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work img{
-       width: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .work:hover img{
-       transform: scale(1.1);
-   }
-   .work:hover .layer{
-       height: 100%;
-   }
-   .work-3{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work-3:hover img{
-       transform: scale(1.1);
-   }
-   .work-3:hover .layer{
-       height: 100%;
-   }
-   .work-3 img{
-       width: 100%;
-       height: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .layer{
-       width: 100%;
-       height: 0;
-       background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-       border-radius: 10px;
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       overflow: hidden;
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-       padding: 0 40px;
-       text-align: center;
-       font-size: 14px;
-       transition: height 0.5s;
-   }
-   .layer h3{
-       font-weight: 500;
-       margin-bottom: 20px;
-   }
-   .layer a{
-       margin-top: 20px;
-       color: #ff004f;
-       text-decoration: none;
-       font-size: 18px;
-       line-height: 60px;
-       background: #fff;
-       width: 60px;
-       height: 60px;
-       border-radius: 50px;
-       text-align: center;
-   }*/
+   #curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 30px;
+    transition: height 0.5s;
+    color: white;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
    
    /*------------------------Contact-----------------------*/
    
@@ -842,86 +923,167 @@ nav .fa-solid {
     font-size: 16px;
    }
    
-   /*----------------------------Services------------------------*/
+   /*----------------------------Curr-Services------------------------*/
    
-   /*#services{
-       padding: 50px 0;
-       border-color: #ababab;
-   }
-   .work-list{
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-       grid-gap: 40px;
-       margin-top: 50px;
-   }
-   .work{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work img{
-       width: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .work:hover img{
-       transform: scale(1.1);
-   }
-   .work:hover .layer{
-       height: 100%;
-   }
-   .work-3{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work-3:hover img{
-       transform: scale(1.1);
-   }
-   .work-3:hover .layer{
-       height: 100%;
-   }
-   .work-3 img{
-       width: 100%;
-       height: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .layer{
-       width: 100%;
-       height: 0;
-       background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-       border-radius: 10px;
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       overflow: hidden;
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-       padding: 0 40px;
-       text-align: center;
-       font-size: 14px;
-       transition: height 0.5s;
-   }
-   .layer h3{
-       font-weight: 500;
-       margin-bottom: 20px;
-   }
-   .layer a{
-       margin-top: 20px;
-       color: #ff004f;
-       text-decoration: none;
-       font-size: 18px;
-       line-height: 60px;
-       background: #fff;
-       width: 60px;
-       height: 60px;
-       border-radius: 50px;
-       text-align: center;
-   }*/
+   #curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 30px;
+    transition: height 0.5s;
+    color: white;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
    
    /*------------------------Contact-----------------------*/
    
@@ -1118,11 +1280,94 @@ nav .fa-solid {
         font-size: 16px;
     }
     
-    /*----------------------------Services------------------------*/
+    /*----------------------------Curr-Courses------------------------*/
     
-    /*#services{
+    #curr-courses{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .curr-courses-col-1{
+        flex-basis: 35%;
+    }
+    .curr-courses-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .curr-courses-col-2{
+        flex-basis: 60%;
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 5px 40px 5px;
+    }
+    .tab-links{
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        background-color: #1ee114;
+        border-radius: 20px;
+        border: 2px solid #ff0000;
+        height: 100%;
+        width: max-content;
+        margin: 3px 15px 3px 10px;
+        font-family: emoji;
+        color: black;
+    }
+    .tab-links:hover{
+        background-color: bisque;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul{
+        font-size: 20px;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 25px;
+    }
+    
+    .tab-contents{
+        display: none;
+    }
+    
+    .tab-contents.active-tab{
+        display:block;
+    }
+    
+    
+    /*------------------Online-Classes-------------------------*/
+    
+    #online-classes{
         padding: 50px 0;
-        border-color: #ababab;
     }
     .work-list{
         display: grid;
@@ -1132,43 +1377,20 @@ nav .fa-solid {
     }
     .work{
         border-radius: 10px;
-        position: relative;
+        position:relative;
         overflow: hidden;
     }
     .work img{
         width: 100%;
-        border-radius: 25px;
-        display: block;
-        transition: transform 0.5s;
-    }
-    .work:hover img{
-        transform: scale(1.1);
-    }
-    .work:hover .layer{
-        height: 100%;
-    }
-    .work-3{
         border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-    }
-    .work-3:hover img{
-        transform: scale(1.1);
-    }
-    .work-3:hover .layer{
-        height: 100%;
-    }
-    .work-3 img{
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
         display: block;
         transition: transform 0.5s;
+        height: 100%;
     }
     .layer{
         width: 100%;
         height: 0;
-        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        background: linear-gradient(rgba(0,0,0,0.6), #01840c);
         border-radius: 10px;
         position: absolute;
         left: 0;
@@ -1179,8 +1401,9 @@ nav .fa-solid {
         flex-direction: column;
         padding: 0 40px;
         text-align: center;
-        font-size: 14px;
+        font-size: 30px;
         transition: height 0.5s;
+        color: white;
     }
     .layer h3{
         font-weight: 500;
@@ -1195,9 +1418,29 @@ nav .fa-solid {
         background: #fff;
         width: 60px;
         height: 60px;
-        border-radius: 50px;
+        border-radius: 50%;
         text-align: center;
-    }*/
+    }
+    .work:hover img{
+        transform: scale(1.1);
+    }
+    .work:hover .layer{
+        height: 100%;
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ff004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.5s;
+    }
+    .btn:hover{
+        background:#1ee114;
+    }
     
     /*------------------------Contact-----------------------*/
     
@@ -1396,11 +1639,94 @@ nav .fa-solid {
         font-size: 16px;
     }
     
-    /*----------------------------Services------------------------*/
+    /*----------------------------Curr-Courses------------------------*/
     
-    /*#services{
+    #curr-courses{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .curr-courses-col-1{
+        flex-basis: 35%;
+    }
+    .curr-courses-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .curr-courses-col-2{
+        flex-basis: 60%;
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 5px 40px 5px;
+    }
+    .tab-links{
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        background-color: #1ee114;
+        border-radius: 20px;
+        border: 2px solid #ff0000;
+        height: 100%;
+        width: max-content;
+        margin: 3px 15px 3px 10px;
+        font-family: emoji;
+        color: black;
+    }
+    .tab-links:hover{
+        background-color: bisque;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul{
+        font-size: 20px;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 25px;
+    }
+    
+    .tab-contents{
+        display: none;
+    }
+    
+    .tab-contents.active-tab{
+        display:block;
+    }
+    
+    
+    /*------------------Online-Classes-------------------------*/
+    
+    #online-classes{
         padding: 50px 0;
-        border-color: #ababab;
     }
     .work-list{
         display: grid;
@@ -1410,43 +1736,20 @@ nav .fa-solid {
     }
     .work{
         border-radius: 10px;
-        position: relative;
+        position:relative;
         overflow: hidden;
     }
     .work img{
         width: 100%;
-        border-radius: 25px;
-        display: block;
-        transition: transform 0.5s;
-    }
-    .work:hover img{
-        transform: scale(1.1);
-    }
-    .work:hover .layer{
-        height: 100%;
-    }
-    .work-3{
         border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-    }
-    .work-3:hover img{
-        transform: scale(1.1);
-    }
-    .work-3:hover .layer{
-        height: 100%;
-    }
-    .work-3 img{
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
         display: block;
         transition: transform 0.5s;
+        height: 100%;
     }
     .layer{
         width: 100%;
         height: 0;
-        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        background: linear-gradient(rgba(0,0,0,0.6), #01840c);
         border-radius: 10px;
         position: absolute;
         left: 0;
@@ -1457,8 +1760,9 @@ nav .fa-solid {
         flex-direction: column;
         padding: 0 40px;
         text-align: center;
-        font-size: 14px;
+        font-size: 30px;
         transition: height 0.5s;
+        color: white;
     }
     .layer h3{
         font-weight: 500;
@@ -1473,9 +1777,29 @@ nav .fa-solid {
         background: #fff;
         width: 60px;
         height: 60px;
-        border-radius: 50px;
+        border-radius: 50%;
         text-align: center;
-    }*/
+    }
+    .work:hover img{
+        transform: scale(1.1);
+    }
+    .work:hover .layer{
+        height: 100%;
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ff004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.5s;
+    }
+    .btn:hover{
+        background:#1ee114;
+    }
     
     /*------------------------Contact-----------------------*/
     
@@ -1682,9 +2006,92 @@ nav ul .fa-solid{
 
 /*----------------------------Services------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -1694,43 +2101,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -1741,8 +2125,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -1757,9 +2142,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -1968,86 +2373,167 @@ form .btn{
     font-size: 16px;
    }
    
-   /*----------------------------Services------------------------*/
+   /*----------------------------Curr-Courses------------------------*/
    
-   /*#services{
-       padding: 50px 0;
-       border-color: #ababab;
-   }
-   .work-list{
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-       grid-gap: 40px;
-       margin-top: 50px;
-   }
-   .work{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work img{
-       width: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .work:hover img{
-       transform: scale(1.1);
-   }
-   .work:hover .layer{
-       height: 100%;
-   }
-   .work-3{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work-3:hover img{
-       transform: scale(1.1);
-   }
-   .work-3:hover .layer{
-       height: 100%;
-   }
-   .work-3 img{
-       width: 100%;
-       height: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .layer{
-       width: 100%;
-       height: 0;
-       background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-       border-radius: 10px;
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       overflow: hidden;
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-       padding: 0 40px;
-       text-align: center;
-       font-size: 14px;
-       transition: height 0.5s;
-   }
-   .layer h3{
-       font-weight: 500;
-       margin-bottom: 20px;
-   }
-   .layer a{
-       margin-top: 20px;
-       color: #ff004f;
-       text-decoration: none;
-       font-size: 18px;
-       line-height: 60px;
-       background: #fff;
-       width: 60px;
-       height: 60px;
-       border-radius: 50px;
-       text-align: center;
-   }*/
+   #curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 30px;
+    transition: height 0.5s;
+    color: white;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
    
    /*------------------------Contact-----------------------*/
    
@@ -2258,86 +2744,167 @@ form .btn{
     font-size: 16px;
 }
    
-   /*----------------------------Services------------------------*/
+   /*----------------------------Curr-Courses------------------------*/
    
-   /*#services{
-       padding: 50px 0;
-       border-color: #ababab;
-   }
-   .work-list{
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-       grid-gap: 40px;
-       margin-top: 50px;
-   }
-   .work{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work img{
-       width: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .work:hover img{
-       transform: scale(1.1);
-   }
-   .work:hover .layer{
-       height: 100%;
-   }
-   .work-3{
-       border-radius: 10px;
-       position: relative;
-       overflow: hidden;
-   }
-   .work-3:hover img{
-       transform: scale(1.1);
-   }
-   .work-3:hover .layer{
-       height: 100%;
-   }
-   .work-3 img{
-       width: 100%;
-       height: 100%;
-       border-radius: 25px;
-       display: block;
-       transition: transform 0.5s;
-   }
-   .layer{
-       width: 100%;
-       height: 0;
-       background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-       border-radius: 10px;
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       overflow: hidden;
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-       padding: 0 40px;
-       text-align: center;
-       font-size: 14px;
-       transition: height 0.5s;
-   }
-   .layer h3{
-       font-weight: 500;
-       margin-bottom: 20px;
-   }
-   .layer a{
-       margin-top: 20px;
-       color: #ff004f;
-       text-decoration: none;
-       font-size: 18px;
-       line-height: 60px;
-       background: #fff;
-       width: 60px;
-       height: 60px;
-       border-radius: 50px;
-       text-align: center;
-   }*/
+   #curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 30px;
+    transition: height 0.5s;
+    color: white;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
    
    /*------------------------Contact-----------------------*/
    
@@ -2534,11 +3101,94 @@ form .btn{
         font-size: 16px;
     }
     
-    /*----------------------------Services------------------------*/
+    /*----------------------------Curr-Courses------------------------*/
     
-    /*#services{
+    #curr-courses{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .curr-courses-col-1{
+        flex-basis: 35%;
+    }
+    .curr-courses-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .curr-courses-col-2{
+        flex-basis: 60%;
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 5px 40px 5px;
+    }
+    .tab-links{
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        background-color: #1ee114;
+        border-radius: 20px;
+        border: 2px solid #ff0000;
+        height: 100%;
+        width: max-content;
+        margin: 3px 15px 3px 10px;
+        font-family: emoji;
+        color: black;
+    }
+    .tab-links:hover{
+        background-color: bisque;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul{
+        font-size: 20px;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 25px;
+    }
+    
+    .tab-contents{
+        display: none;
+    }
+    
+    .tab-contents.active-tab{
+        display:block;
+    }
+    
+    
+    /*------------------Online-Classes-------------------------*/
+    
+    #online-classes{
         padding: 50px 0;
-        border-color: #ababab;
     }
     .work-list{
         display: grid;
@@ -2548,43 +3198,20 @@ form .btn{
     }
     .work{
         border-radius: 10px;
-        position: relative;
+        position:relative;
         overflow: hidden;
     }
     .work img{
         width: 100%;
-        border-radius: 25px;
-        display: block;
-        transition: transform 0.5s;
-    }
-    .work:hover img{
-        transform: scale(1.1);
-    }
-    .work:hover .layer{
-        height: 100%;
-    }
-    .work-3{
         border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-    }
-    .work-3:hover img{
-        transform: scale(1.1);
-    }
-    .work-3:hover .layer{
-        height: 100%;
-    }
-    .work-3 img{
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
         display: block;
         transition: transform 0.5s;
+        height: 100%;
     }
     .layer{
         width: 100%;
         height: 0;
-        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        background: linear-gradient(rgba(0,0,0,0.6), #01840c);
         border-radius: 10px;
         position: absolute;
         left: 0;
@@ -2595,8 +3222,9 @@ form .btn{
         flex-direction: column;
         padding: 0 40px;
         text-align: center;
-        font-size: 14px;
+        font-size: 30px;
         transition: height 0.5s;
+        color: white;
     }
     .layer h3{
         font-weight: 500;
@@ -2611,9 +3239,29 @@ form .btn{
         background: #fff;
         width: 60px;
         height: 60px;
-        border-radius: 50px;
+        border-radius: 50%;
         text-align: center;
-    }*/
+    }
+    .work:hover img{
+        transform: scale(1.1);
+    }
+    .work:hover .layer{
+        height: 100%;
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ff004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.5s;
+    }
+    .btn:hover{
+        background:#1ee114;
+    }
     
     /*------------------------Contact-----------------------*/
     
@@ -2808,11 +3456,94 @@ form .btn{
         font-size: 16px;
     }
     
-    /*----------------------------Services------------------------*/
+    /*----------------------------Curr-Courses------------------------*/
     
-    /*#services{
+    #curr-courses{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .curr-courses-col-1{
+        flex-basis: 35%;
+    }
+    .curr-courses-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .curr-courses-col-2{
+        flex-basis: 60%;
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 5px 40px 5px;
+    }
+    .tab-links{
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        background-color: #1ee114;
+        border-radius: 20px;
+        border: 2px solid #ff0000;
+        height: 100%;
+        width: max-content;
+        margin: 3px 15px 3px 10px;
+        font-family: emoji;
+        color: black;
+    }
+    .tab-links:hover{
+        background-color: bisque;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul{
+        font-size: 20px;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 25px;
+    }
+    
+    .tab-contents{
+        display: none;
+    }
+    
+    .tab-contents.active-tab{
+        display:block;
+    }
+    
+    
+    /*------------------Online-Classes-------------------------*/
+    
+    #online-classes{
         padding: 50px 0;
-        border-color: #ababab;
     }
     .work-list{
         display: grid;
@@ -2822,43 +3553,20 @@ form .btn{
     }
     .work{
         border-radius: 10px;
-        position: relative;
+        position:relative;
         overflow: hidden;
     }
     .work img{
         width: 100%;
-        border-radius: 25px;
-        display: block;
-        transition: transform 0.5s;
-    }
-    .work:hover img{
-        transform: scale(1.1);
-    }
-    .work:hover .layer{
-        height: 100%;
-    }
-    .work-3{
         border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-    }
-    .work-3:hover img{
-        transform: scale(1.1);
-    }
-    .work-3:hover .layer{
-        height: 100%;
-    }
-    .work-3 img{
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
         display: block;
         transition: transform 0.5s;
+        height: 100%;
     }
     .layer{
         width: 100%;
         height: 0;
-        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        background: linear-gradient(rgba(0,0,0,0.6), #01840c);
         border-radius: 10px;
         position: absolute;
         left: 0;
@@ -2869,8 +3577,9 @@ form .btn{
         flex-direction: column;
         padding: 0 40px;
         text-align: center;
-        font-size: 14px;
+        font-size: 30px;
         transition: height 0.5s;
+        color: white;
     }
     .layer h3{
         font-weight: 500;
@@ -2885,9 +3594,29 @@ form .btn{
         background: #fff;
         width: 60px;
         height: 60px;
-        border-radius: 50px;
+        border-radius: 50%;
         text-align: center;
-    }*/
+    }
+    .work:hover img{
+        transform: scale(1.1);
+    }
+    .work:hover .layer{
+        height: 100%;
+    }
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ff004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.5s;
+    }
+    .btn:hover{
+        background:#1ee114;
+    }
     
     /*------------------------Contact-----------------------*/
     
@@ -3096,11 +3825,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -3110,43 +3922,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -3157,8 +3946,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -3173,9 +3963,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -3388,11 +4198,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -3402,43 +4295,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -3449,8 +4319,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -3465,9 +4336,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -3681,11 +4572,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -3695,43 +4669,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -3742,8 +4693,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -3758,9 +4710,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -3965,11 +4937,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -3979,43 +5034,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -4026,8 +5058,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -4042,9 +5075,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -4249,11 +5302,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -4263,43 +5399,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -4310,8 +5423,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -4326,9 +5440,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -4534,11 +5668,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -4548,43 +5765,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -4595,8 +5789,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -4611,9 +5806,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -4814,11 +6029,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -4828,43 +6126,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -4875,8 +6150,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -4891,9 +6167,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -5101,11 +6397,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -5115,43 +6494,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -5162,8 +6518,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -5178,9 +6535,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -5385,11 +6762,94 @@ nav ul .fa-solid{
     margin: 1px 5px 1px 5vh;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -5399,43 +6859,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -5446,8 +6883,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -5462,9 +6900,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
@@ -5661,11 +7119,94 @@ nav ul .fa-solid{
     font-size: 16px;
 }
 
-/*----------------------------Services------------------------*/
+/*----------------------------Curr-Courses------------------------*/
 
-/*#services{
+#curr-courses{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.curr-courses-col-1{
+    flex-basis: 35%;
+}
+.curr-courses-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.curr-courses-col-2{
+    flex-basis: 60%;
+    font-size: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 5px 40px 5px;
+}
+.tab-links{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: #1ee114;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    height: 100%;
+    width: max-content;
+    margin: 3px 15px 3px 10px;
+    font-family: emoji;
+    color: black;
+}
+.tab-links:hover{
+    background-color: bisque;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul{
+    font-size: 20px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+/*------------------Online-Classes-------------------------*/
+
+#online-classes{
     padding: 50px 0;
-    border-color: #ababab;
 }
 .work-list{
     display: grid;
@@ -5675,43 +7216,20 @@ nav ul .fa-solid{
 }
 .work{
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 25px;
-    display: block;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.work-3{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work-3:hover img{
-    transform: scale(1.1);
-}
-.work-3:hover .layer{
-    height: 100%;
-}
-.work-3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #01840c);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -5722,8 +7240,9 @@ nav ul .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 30px;
     transition: height 0.5s;
+    color: white;
 }
 .layer h3{
     font-weight: 500;
@@ -5738,9 +7257,29 @@ nav ul .fa-solid{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
-}*/
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#1ee114;
+}
 
 /*------------------------Contact-----------------------*/
 
