@@ -505,15 +505,11 @@ nav .fa-solid {
        font-size: 20px;
        font-weight: bold;
    }
-   .header-text p{
+   .header-text h1{
        font-size: 250px;
        text-decoration: #046d32 underline;
        text-decoration-skip-ink: none;
        margin: 1px 15vh 1px 15vh;
-   }
-   .header-text h1{
-       font-size: 35px;
-       margin: 1px 25vh 1px 30vh;
    }
    .header-text h1 span{
        margin-left: 30px;
@@ -538,7 +534,6 @@ nav .fa-solid {
     margin: 5px 10vh 5px 20vh;
 }
 .header-text h3{
-    font-size: 50px;
     text-decoration-skip-ink: none;
     margin: 20px 1vh 10px 1vh;
     color: #057c31;
@@ -546,15 +541,19 @@ nav .fa-solid {
     font-weight: 900;
 }
 .header-text h3 span{
-    margin: 5px 30vh 5px 37vh;
+    font-size: 50px;
+    margin: 5px 20vh 5px 27vh;
     text-decoration: underline whitesmoke;
 }
 .header-icons{
-    margin: 5px 10vh 5px 60vh;
+    margin: 5px 10vh 5px 45vh;
 }
-.header-icons div a{
+.header-icons a{
     font-size: 30px;
     font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
 }
    
    /*------------------------------about-------------------------*/
@@ -623,7 +622,7 @@ nav .fa-solid {
     margin: 20px 5px 40px 5px;
 }
 .tab-links{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -739,6 +738,7 @@ nav .fa-solid {
     height: 100%;
 }
 .btn{
+    font-size: 50px;
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -800,12 +800,12 @@ nav .fa-solid {
        padding: 15px;
        margin: 15px;
        color: #fff;
-       font-size: 18px;
+       font-size: 25px;
        border-radius: 15px;
    }
    form .btn{
        padding: 14px 60px;
-       font-size: 18px;
+       font-size: 30px;
        margin-top: 20px;
        cursor: pointer;
        margin-left: 15px;
@@ -1024,7 +1024,7 @@ nav .fa-solid {
     width: 50%;
 }
 .tab-contents ul{
-    font-size: 20px;
+    font-size: 25px;
 }
 .tab-contents ul li{
     list-style: none;
@@ -1134,7 +1134,7 @@ nav .fa-solid {
    .contact-list p i{
        color: #ddb6c2;
        margin-right: 15px;
-       font-size: 25px;
+       font-size: 30px;
    }
    .contact-left{
        padding: 10px;
@@ -1152,7 +1152,7 @@ nav .fa-solid {
    }
    .social-icons a{
        text-decoration: none;
-       font-size: 30px;
+       font-size: 40px;
        margin-right: 15px;
        color: #1ee114;
        display: inline-block;
