@@ -46,7 +46,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #fff700;
     text-decoration: none;
     display: inline-block;
     list-style: none;
@@ -70,7 +70,6 @@ nav ul li a:hover::after{
     transform: translate(0);
 
 }
-
 .header-text{
     color: #fff;
     margin-top: 20px;
@@ -90,10 +89,40 @@ nav ul li a:hover::after{
 .header-text h2{
     font-size: 75px;
     text-decoration-skip-ink: none;
-    margin: 3px 32vh 3px 30vh;
+    margin: 5px 32vh 5px 30vh;
     color: #042502;
     font-weight: 900;
     background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 20vh;
+}
+.header-text h3{
+    font-size: 30px;
+    text-decoration-skip-ink: none;
+    margin: 20px 32vh 10px 30vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    margin: 5px 10vh 5px 50vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 60vh;
+}
+.header-icons div a{
+    font-size: 30px;
+    font-weight: 900;
 }
 
 /*----------------------------About------------------------*/
