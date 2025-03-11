@@ -918,19 +918,56 @@ nav .fa-solid {
        font-size: 20px;
        font-weight: bold;
    }
-   .header-text p{
-       font-size: 100px;
+   .header-text h1{
+       font-size: 200px;
        text-decoration: #045b39 underline;
        text-decoration-skip-ink: none;
-       margin: 1px 20vh 1px 25vh;
-   }
-   .header-text h1{
-       font-size: 50px;
-       margin: 1px 15px 1px 10vh;
+       margin: 1px 15px 1px 25vh;
    }
    .header-text h1 span{
        margin-left: 30px;
    }
+   .header-text h2{
+    font-size: 75px;
+    text-decoration-skip-ink: none;
+    margin: 5px 5vh 5px 5vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 20vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 50px;
+    margin: 5px 20vh 5px 33vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 50vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
+}
    
    /*------------------------------about-------------------------*/
    .sub-title{
