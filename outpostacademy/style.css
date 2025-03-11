@@ -462,11 +462,11 @@ nav .fa-solid {
    
    nav ul li a{
        color: #fff;
-       text-decoration: none;
+       text-decoration: underline;
        display: inline-block;
        list-style: none;
        overflow: hidden;
-       font-size: 45px;
+       font-size: 35px;
        font-weight: bolder;
        position: relative;
    }
@@ -506,10 +506,10 @@ nav .fa-solid {
        font-weight: bold;
    }
    .header-text p{
-       font-size: 125px;
+       font-size: 250px;
        text-decoration: #046d32 underline;
        text-decoration-skip-ink: none;
-       margin: 1px 10vh 1px 15vh;
+       margin: 1px 15vh 1px 15vh;
    }
    .header-text h1{
        font-size: 35px;
@@ -518,6 +518,44 @@ nav .fa-solid {
    .header-text h1 span{
        margin-left: 30px;
    }
+   .header-text h2{
+    font-size: 75px;
+    text-decoration-skip-ink: none;
+    margin: 5px 5vh 5px 5vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 20vh;
+}
+.header-text h3{
+    font-size: 50px;
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    margin: 5px 30vh 5px 37vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 60vh;
+}
+.header-icons div a{
+    font-size: 30px;
+    font-weight: 900;
+}
    
    /*------------------------------about-------------------------*/
    .sub-title{
@@ -537,20 +575,20 @@ nav .fa-solid {
     font-size: 16px;
    }
    .about-col-2 p{
-    font-size: 18px;
+    font-size: 30px;
    }
    .about-col-3 img{
        width: 100%;
    }
    .about-col-3 h1{
     font-size: 50px;
-    margin: 1px 15px 1px 15vh;
+    margin: 1px 15px 1px 10vh;
    }
    .about-col-4 {
     flex-basis: auto;
    }
    .about-col-4 p{
-    font-size: 16px;
+    font-size: 30px;
    }
    
    /*----------------------------Curr-Services------------------------*/
