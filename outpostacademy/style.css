@@ -4837,7 +4837,7 @@ form .btn{
     /*----------------------------header-------------------------*/
 
 #header{
-    width: 120%;
+    width: 100vh;
     height: 100vh;
     background-image: url(images/College\ Classroom.png);
     background-size: cover;
@@ -4945,7 +4945,7 @@ nav ul .fa-solid{
     text-decoration: none;
 }
 .header-text h2 span{
-    margin: 5px 10vh 5px 23vh;
+    margin: 5px 10vh 5px 20vh;
 }
 .header-text h3{
     text-decoration-skip-ink: none;
@@ -4955,12 +4955,12 @@ nav ul .fa-solid{
     font-weight: 900;
 }
 .header-text h3 span{
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 20vh 5px 30vh;
     text-decoration: underline whitesmoke;
 }
 .header-icons{
-    margin: 5px 10vh 5px 32vh;
+    margin: 5px 10vh 5px 28vh;
 }
 .header-icons a{
     font-size: 30px;
