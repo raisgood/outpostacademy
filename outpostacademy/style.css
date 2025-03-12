@@ -1325,18 +1325,55 @@ nav .fa-solid {
         font-size: 20px;
         font-weight: bold;
     }
-    .header-text p{
-        font-size: 100px;
+    .header-text h1{
+        font-size: 150px;
         text-decoration: #0b5d29 underline;
         text-decoration-skip-ink: none;
-        margin: 1px 10vh 1px 20vh;
-    }
-    .header-text h1{
-        font-size: 35px;
         margin: 1px 25vh 1px 30vh;
     }
     .header-text h1 span{
         margin-left: 30px;
+    }
+    .header-text h2{
+        font-size: 50px;
+        text-decoration-skip-ink: none;
+        margin: 5px 10vh 5px 15vh;
+        color: #042502;
+        font-weight: 900;
+        background: tomato;
+        border-radius: 50px;
+    }
+    .header-text h2:hover{
+        background: #1ee114;
+        color: #fff;
+    }
+    .header-text h2 a{
+        text-decoration: none;
+    }
+    .header-text h2 span{
+        margin: 5px 10vh 5px 20vh;
+    }
+    .header-text h3{
+        text-decoration-skip-ink: none;
+        margin: 20px 1vh 10px 1vh;
+        color: #057c31;
+        background: black;
+        font-weight: 900;
+    }
+    .header-text h3 span{
+        font-size: 30px;
+        margin: 5px 20vh 5px 40vh;
+        text-decoration: underline whitesmoke;
+    }
+    .header-icons{
+        margin: 5px 10vh 5px 50vh;
+    }
+    .header-icons a{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .header-icon a i{
+        font-size: 30px;
     }
 
     /*------------------------------about-------------------------*/
@@ -1680,18 +1717,55 @@ nav .fa-solid {
         font-size: 20px;
         font-weight: bold;
     }
-    .header-text p{
+    .header-text h1{
         font-size: 100px;
         text-decoration: #0b643c underline;
         text-decoration-skip-ink: none;
-        margin: 1px 5vh 1px 7vh;
-    }
-    .header-text h1{
-        font-size: 35px;
-        margin: 1px 25vh 1px 30vh;
+        margin: 1px 25vh 1px 40vh;
     }
     .header-text h1 span{
         margin-left: 30px;
+    }
+    .header-text h2{
+        font-size: 45px;
+        text-decoration-skip-ink: none;
+        margin: 5px 10vh 5px 10vh;
+        color: #042502;
+        font-weight: 900;
+        background: tomato;
+        border-radius: 50px;
+    }
+    .header-text h2:hover{
+        background: #1ee114;
+        color: #fff;
+    }
+    .header-text h2 a{
+        text-decoration: none;
+    }
+    .header-text h2 span{
+        margin: 5px 10vh 5px 20vh;
+    }
+    .header-text h3{
+        text-decoration-skip-ink: none;
+        margin: 20px 1vh 10px 1vh;
+        color: #057c31;
+        background: black;
+        font-weight: 900;
+    }
+    .header-text h3 span{
+        font-size: 30px;
+        margin: 5px 20vh 5px 40vh;
+        text-decoration: underline whitesmoke;
+    }
+    .header-icons{
+        margin: 5px 10vh 5px 50vh;
+    }
+    .header-icons a{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .header-icon a i{
+        font-size: 30px;
     }
 
     /*------------------------------about-------------------------*/
@@ -1701,7 +1775,7 @@ nav .fa-solid {
         border-radius: 15px;
     }
     .about-col-2 p {
-        font-size: 16px;
+        font-size: 25px;
     }
     .about-col-3 img{
         width: 100%;
@@ -1711,7 +1785,7 @@ nav .fa-solid {
         margin: 1px 5px 1px 5vh;
     }
     .about-col-4 p{
-        font-size: 16px;
+        font-size: 25px;
     }
     
     /*----------------------------Curr-Courses------------------------*/
@@ -2039,16 +2113,11 @@ nav ul .fa-solid{
     font-size: 20px;
     font-weight: bold;
 }
-.header-text p{
-    font-size: 65px;
-    text-decoration: #666464 underline;
-    text-decoration-skip-ink: none;
-    text-align: center;
-}
 .header-text h1{
-    font-size: 20px;
-    margin: 1px 25vh 1px 30vh;
-    margin: 2px 20px 2px 20px;
+    font-size: 100px;
+    text-decoration: #0b643c underline;
+    text-decoration-skip-ink: none;
+    margin: 1px 25vh 1px 40vh;
     padding: 25px;
     text-align: center;
 }
@@ -2056,6 +2125,47 @@ nav ul .fa-solid{
 .header-text h1 span{
     margin: 35px;
     padding: 25px;
+}
+.header-text h2{
+    font-size: 45px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 15vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 20vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 30px;
+    margin: 5px 20vh 5px 40vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 50vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
 }
 
 /*----------------------------about---------------------*/
@@ -2065,7 +2175,7 @@ nav ul .fa-solid{
     border-radius: 15px;
 }
 .about-col-2 {
-    font-size: 16px;
+    font-size: 20px;
 }
 .about-col-3 img{
     width: 115%;
@@ -2076,7 +2186,7 @@ nav ul .fa-solid{
     margin: 1px 5px 1px 20px;;
 }
 .about-col-4 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /*----------------------------Services------------------------*/
@@ -2404,19 +2514,56 @@ form .btn{
        font-size: 20px;
        font-weight: bold;
    }
-   .header-text p{
-       font-size: 80px;
+   .header-text h1{
+       font-size: 100px;
        text-decoration: #046d32 underline;
        text-decoration-skip-ink: none;
-       margin: 1px 5vh 1px 7vh;
-   }
-   .header-text h1{
-       font-size: 35px;
        margin: 1px 25vh 1px 30vh;
    }
    .header-text h1 span{
        margin-left: 30px;
    }
+   .header-text h2{
+    font-size: 35px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 25px;
+    margin: 5px 20vh 5px 36vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 40vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
+}
    
    /*------------------------------about-------------------------*/
    .sub-title{
@@ -2436,7 +2583,7 @@ form .btn{
     font-size: x-large;
    }
    .about-col-2 p{
-    font-size: 16px;
+    font-size: 20px;
    }
    .about-col-3 img{
        width: 100%;
@@ -2445,7 +2592,7 @@ form .btn{
     flex-basis: auto;
    }
    .about-col-4 p{
-    font-size: 16px;
+    font-size: 20px;
    }
    
    /*----------------------------Curr-Courses------------------------*/
@@ -2775,19 +2922,56 @@ form .btn{
        font-size: 20px;
        font-weight: bold;
    }
-   .header-text p{
-       font-size: 90px;
-       text-decoration: #585656 underline;
-       text-decoration-skip-ink: none;
-       margin: 1px 1vh 1px 4vh;
-   }
    .header-text h1{
-       font-size: 35px;
+       font-size: 100px;
+       text-decoration: #046d32 underline;
+       text-decoration-skip-ink: none;
        margin: 1px 25vh 1px 30vh;
    }
    .header-text h1 span{
        margin-left: 30px;
    }
+   .header-text h2{
+    font-size: 35px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 25px;
+    margin: 5px 20vh 5px 36vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 40vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
+}
    
    /*------------------------------about-------------------------*/
    .sub-title{
@@ -3103,7 +3287,7 @@ form .btn{
 
     nav ul li a{
         color: #fff;
-        text-decoration: none;
+        text-decoration: underline;
         display: inline-block;
         list-style: none;
         overflow: hidden;
@@ -3146,18 +3330,55 @@ form .btn{
         font-size: 20px;
         font-weight: bold;
     }
-    .header-text p{
-        font-size: 80px;
+    .header-text h1{
+        font-size: 85px;
         text-decoration: #0b5d29 underline;
         text-decoration-skip-ink: none;
-        margin: 1px 3vh 1px 5vh;
-    }
-    .header-text h1{
-        font-size: 35px;
         margin: 1px 25vh 1px 30vh;
     }
     .header-text h1 span{
         margin-left: 30px;
+    }
+    .header-text h2{
+        font-size: 35px;
+        text-decoration-skip-ink: none;
+        margin: 5px 10vh 5px 10vh;
+        color: #042502;
+        font-weight: 900;
+        background: tomato;
+        border-radius: 50px;
+    }
+    .header-text h2:hover{
+        background: #1ee114;
+        color: #fff;
+    }
+    .header-text h2 a{
+        text-decoration: none;
+    }
+    .header-text h2 span{
+        margin: 5px 10vh 5px 23vh;
+    }
+    .header-text h3{
+        text-decoration-skip-ink: none;
+        margin: 20px 1vh 10px 1vh;
+        color: #057c31;
+        background: black;
+        font-weight: 900;
+    }
+    .header-text h3 span{
+        font-size: 25px;
+        margin: 5px 20vh 5px 36vh;
+        text-decoration: underline whitesmoke;
+    }
+    .header-icons{
+        margin: 5px 10vh 5px 40vh;
+    }
+    .header-icons a{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .header-icon a i{
+        font-size: 30px;
     }
 
     /*------------------------------about-------------------------*/
@@ -3458,7 +3679,7 @@ form .btn{
 
     nav ul li a{
         color: #fff;
-        text-decoration: none;
+        text-decoration: underline;
         display: inline-block;
         list-style: none;
         overflow: hidden;
@@ -3501,18 +3722,55 @@ form .btn{
         font-size: 20px;
         font-weight: bold;
     }
-    .header-text p{
-        font-size: 80px;
-        text-decoration: #0b643c underline;
-        text-decoration-skip-ink: none;
-        margin: 1px 3vh 1px 5vh;
-    }
     .header-text h1{
-        font-size: 35px;
+        font-size: 75px;
+        text-decoration: #0b5d29 underline;
+        text-decoration-skip-ink: none;
         margin: 1px 25vh 1px 30vh;
     }
     .header-text h1 span{
         margin-left: 30px;
+    }
+    .header-text h2{
+        font-size: 35px;
+        text-decoration-skip-ink: none;
+        margin: 5px 10vh 5px 10vh;
+        color: #042502;
+        font-weight: 900;
+        background: tomato;
+        border-radius: 50px;
+    }
+    .header-text h2:hover{
+        background: #1ee114;
+        color: #fff;
+    }
+    .header-text h2 a{
+        text-decoration: none;
+    }
+    .header-text h2 span{
+        margin: 5px 10vh 5px 23vh;
+    }
+    .header-text h3{
+        text-decoration-skip-ink: none;
+        margin: 20px 1vh 10px 1vh;
+        color: #057c31;
+        background: black;
+        font-weight: 900;
+    }
+    .header-text h3 span{
+        font-size: 25px;
+        margin: 5px 20vh 5px 36vh;
+        text-decoration: underline whitesmoke;
+    }
+    .header-icons{
+        margin: 5px 10vh 5px 45vh;
+    }
+    .header-icons a{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .header-icon a i{
+        font-size: 30px;
     }
 
     /*------------------------------about-------------------------*/
@@ -3856,24 +4114,55 @@ nav ul .fa-solid{
     font-size: 20px;
     font-weight: bold;
 }
-.header-text p{
-    font-size: 80px;
-    text-decoration: #054e30 underline;
-    text-decoration-skip-ink: none;
-    text-align: center;
-    margin: 1px 5vh 1px 10vh;
-}
 .header-text h1{
-    font-size: 20px;
+    font-size: 75px;
+    text-decoration: #0b5d29 underline;
+    text-decoration-skip-ink: none;
     margin: 1px 25vh 1px 30vh;
-    margin: 2px 20px 2px 20px;
-    padding: 25px;
-    text-align: center;
 }
-
 .header-text h1 span{
-    margin: 35px;
-    padding: 25px;
+    margin-left: 30px;
+}
+.header-text h2{
+    font-size: 30px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 20px;
+    margin: 5px 20vh 5px 36vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 38vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
 }
 
 /*----------------------------about---------------------*/
@@ -3894,7 +4183,7 @@ nav ul .fa-solid{
 }
 .about-col-3 h1 {
     font-size: 30px;
-    margin: 1px 5px 1px 15vh;
+    margin: 1px 5px 1px 10vh;
 }
 .about-col-4 p{
     font-size: 16px;
@@ -4225,23 +4514,55 @@ nav ul .fa-solid{
     font-size: 20px;
     font-weight: bold;
 }
-.header-text p{
-    font-size: 80px;
-    text-decoration: #1f7927 underline;
-    text-decoration-skip-ink: none;
-    text-align: center;
-}
 .header-text h1{
-    font-size: 20px;
+    font-size: 70px;
+    text-decoration: #0b5d29 underline;
+    text-decoration-skip-ink: none;
     margin: 1px 25vh 1px 30vh;
-    margin: 2px 20px 2px 20px;
-    padding: 25px;
-    text-align: center;
 }
-
 .header-text h1 span{
-    margin: 35px;
-    padding: 25px;
+    margin-left: 30px;
+}
+.header-text h2{
+    font-size: 30px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 20px;
+    margin: 5px 20vh 5px 36vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 38vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
 }
 
 /*----------------------------about---------------------*/
@@ -4516,7 +4837,7 @@ form .btn{
     /*----------------------------header-------------------------*/
 
 #header{
-    width: 100%;
+    width: 120%;
     height: 100vh;
     background-image: url(images/College\ Classroom.png);
     background-size: cover;
@@ -4598,26 +4919,56 @@ nav ul .fa-solid{
     font-size: 20px;
     font-weight: bold;
 }
-.header-text p{
-    font-size: 80px;
-    text-decoration: #1f7927 underline;
-    text-decoration-skip-ink: none;
-    text-align: center;
-    margin: 1px 3vh 1px 3vh;
-}
 .header-text h1{
-    font-size: 20px;
-    margin: 1px 25vh 1px 30vh;
-    margin: 2px 20px 2px 20px;
-    padding: 25px;
-    text-align: center;
+    font-size: 65px;
+    text-decoration: #0b5d29 underline;
+    text-decoration-skip-ink: none;
+    margin: 1px 25vh 1px 25vh;
 }
-
 .header-text h1 span{
-    margin: 35px;
-    padding: 25px;
+    margin-left: 30px;
 }
-
+.header-text h2{
+    font-size: 20px;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
+}
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 20px;
+    margin: 5px 20vh 5px 30vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 32vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
+}
 /*----------------------------about---------------------*/
 
 .about-col-1 img {
@@ -4972,23 +5323,46 @@ nav ul .fa-solid{
     font-size: 20px;
     font-weight: bold;
 }
-.header-text p{
-    font-size: 75px;
-    text-decoration: #027a50 underline;
-    text-decoration-skip-ink: none;
-    text-align: center;
-}
-.header-text h1{
+.header-text h2{
     font-size: 20px;
-    margin: 1px 25vh 1px 30vh;
-    margin: 2px 20px 2px 20px;
-    padding: 25px;
-    text-align: center;
+    text-decoration-skip-ink: none;
+    margin: 5px 10vh 5px 10vh;
+    color: #042502;
+    font-weight: 900;
+    background: tomato;
+    border-radius: 50px;
 }
-
-.header-text h1 span{
-    margin: 35px;
-    padding: 25px;
+.header-text h2:hover{
+    background: #1ee114;
+    color: #fff;
+}
+.header-text h2 a{
+    text-decoration: none;
+}
+.header-text h2 span{
+    margin: 5px 10vh 5px 23vh;
+}
+.header-text h3{
+    text-decoration-skip-ink: none;
+    margin: 20px 1vh 10px 1vh;
+    color: #057c31;
+    background: black;
+    font-weight: 900;
+}
+.header-text h3 span{
+    font-size: 20px;
+    margin: 5px 20vh 5px 30vh;
+    text-decoration: underline whitesmoke;
+}
+.header-icons{
+    margin: 5px 10vh 5px 32vh;
+}
+.header-icons a{
+    font-size: 30px;
+    font-weight: 900;
+}
+.header-icon a i{
+    font-size: 30px;
 }
 
 /*----------------------------about---------------------*/
